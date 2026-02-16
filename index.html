@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Kat Team Events – DJ, Cântăreață și MC pentru ziua ta specială</title>
+    <meta name="description" content="Kat Team Events: divertisment profesional pentru nunti și evenimente. DJ, cântăreț live și MC. Să creăm împreună momente de neuitat.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd92ceb56c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <a href="#home" class="skip-link" data-i18n="skip">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner wrap">
+            <a href="#home" class="logo-link" data-i18n-aria="logo_aria" aria-label="Kat Team Events – Home">
+                <img src="images/Logo.png" width="80" height="80" class="header-logo" alt="Kat Team Events" data-i18n-alt="logo_aria">
+            </a>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav" aria-haspopup="true">
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" data-i18n-aria="nav_aria" aria-label="Main navigation">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#artists" data-i18n="nav_artists">Artists</a>
+                <a href="#offer" data-i18n="nav_offer">What We Offer</a>
+                <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+                <a href="#schedule" data-i18n="nav_schedule">Schedule</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="lang-switcher" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-lang="ro" aria-pressed="true">RO</button>
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+        </div>
+        <div class="header-bar" aria-hidden="true"></div>
+    </header>
+
+    <main>
+        <section class="hero" id="heroSection">
+            <audio id="heroBackgroundAudio" loop preload="auto" aria-label="Home background music">
+                <source src="audio/audio main sample 01.mp3.mp3" type="audio/mpeg">
+            </audio>
+            <div class="hero-sparkles-bg welcome-sparkles" id="welcomeSparkles" aria-hidden="true"></div>
+            <div class="hero-falling-bg falling-sparks" id="fallingSparks" aria-hidden="true"></div>
+            <div class="hero-banner">
+                <video autoplay muted playsinline loop class="hero-banner-img" aria-label="Kat Team Events">
+                    <source src="video/Video main 01.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content wrap">
+                <h1 id="home" class="hero-title">KAT TEAM EVENTS</h1>
+                <div class="hero-welcome-zone">
+                    <div class="welcome-wrap" id="welcomeWrap" aria-live="polite" aria-hidden="true">
+                        <p class="welcome-line" id="welcomeLine" data-i18n="welcomeLine">Welcome to our world</p>
+                        <p class="enjoy-line" id="enjoyLine" data-i18n="enjoyLine">Enjoy</p>
+                    </div>
+                    <p class="hero-intro" id="intro">
+                        <span data-i18n="intro1"></span><a href="#contact" class="hero-intro-link" data-i18n="intro_link"></a><span data-i18n="intro2"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video autoplay muted playsinline loop src="video/Promo.mp4" class="video01" aria-label="Kat Team Events promo" data-i18n-aria="video_aria"></video>
+                <div class="hero-overlay"></div>
+            </div>
+        </section>
+
+        <section id="artists" class="section section--alt">
+            <div class="section-bar"></div>
+            <div class="wrap">
+                <h2 class="section-title" data-i18n="artists_title">Artists</h2>
+                <p class="section-lead" data-i18n="artists_lead">Meet the people behind the music and the magic.</p>
+                <div class="artist-jump" role="navigation" data-i18n-aria="jump_aria" aria-label="Jump to artist">
+                    <a href="#DJ" class="artist-link" data-artist="dj">DJ</a>
+                    <a href="#Singer" class="artist-link" data-artist="singer" data-i18n="artist_singer_btn">Singer</a>
+                    <a href="#MC" class="artist-link" data-artist="mc">MC</a>
+                </div>
+
+                <article class="artist-block" id="DJ">
+                    <div class="artist-block__media"><img src="images/Dj Kat on decks.jpg" alt="DJ Kat at the decks" loading="lazy" data-i18n-alt="dj_alt"></div>
+                    <div class="artist-block__text">
+                        <h3 class="artist-name artist-name--dj">
+                            <span class="artist-name-djboard" aria-hidden="true">
+                                <span class="djboard-deck"><span class="djboard-vinyl"></span></span>
+                                <span class="djboard-mixer"><span class="djboard-fader"></span><span class="djboard-fader"></span><span class="djboard-fader"></span><span class="djboard-fader"></span></span>
+                                <span class="djboard-deck"><span class="djboard-vinyl"></span></span>
+                            </span>
+                            <span class="artist-name__first">DJ</span> <span class="artist-name__second">Kat</span>
+                        </h3>
+                        <p data-i18n="dj_text">DJ Kat has been in the music industry for over 15 years and has built vast experience across different events. He is the right person to take care of the music at any party so you can relax and enjoy. From emotional moments to rocking the floor, DJ Kat brings the right songs at the right moment.</p>
+                        <div class="artist-block__video-wrap">
+                            <video class="artist-block__video" src="video/DJ Kat.mp4" controls playsinline preload="metadata" aria-label="DJ Kat videoclip"></video>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="artist-block artist-block--reverse" id="Singer">
+                    <div class="artist-block__media"><img src="images/Diana Onofrei singing.jpg" alt="Diana Onofrei singing" loading="lazy" data-i18n-alt="diana_alt"></div>
+                    <div class="artist-block__text">
+                        <h3 class="artist-name artist-name--singer">
+                            <span class="artist-name-notes" aria-hidden="true"><span class="artist-note">♪</span><span class="artist-note">♫</span><span class="artist-note">♪</span><span class="artist-note">♫</span><span class="artist-note">♪</span></span>
+                            <span class="artist-name__first">Diana</span> <span class="artist-name__second">Onofrei</span>
+                        </h3>
+                        <p data-i18n="diana_text">Our talented female singer Diana Onofrei brings a voice that can deliver soft, sweet blues and invite your loved ones onto the dance floor—or fill the room with power and energy. From her voice, you'll feel that you can sing too.</p>
+                        <div class="artist-block__video-wrap">
+                            <video class="artist-block__video" src="video/Diana Onofrei.mp4" controls playsinline preload="metadata" aria-label="Diana Onofrei singer videoclip"></video>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="artist-block" id="MC">
+                    <div class="artist-block__media"><img src="images/Iulian Arama Master of ceremony.jpg" alt="Iulian Arama, Master of Ceremony" loading="lazy" data-i18n-alt="iulian_alt"></div>
+                    <div class="artist-block__text">
+                        <h3 class="artist-name artist-name--mc">
+                            <span class="artist-name-mic" aria-hidden="true">
+                                <span class="mic-head"></span>
+                                <span class="mic-stem"></span>
+                                <span class="mic-base"></span>
+                            </span>
+                            <span class="artist-name__first">Iulian</span> <span class="artist-name__second">Arama</span>
+                        </h3>
+                        <p data-i18n="iulian_text">He loves to talk, to share innocent jokes, and he brings one of the most infectious, warm energies to the team. Iulian is our Master of Ceremony, with experience in stand-up comedy and opening concerts. If you feel shy or nervous, he'll put you at ease and help everyone enjoy the moment.</p>
+                        <div class="artist-block__video-wrap">
+                            <video class="artist-block__video" src="video/MC Iulian Arama.mp4" controls playsinline preload="metadata" aria-label="Iulian Arama MC videoclip"></video>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="section-bar"></div>
+            <div class="wrap">
+                <h2 class="section-title" data-i18n="gallery_title">Gallery</h2>
+                <p class="section-lead" data-i18n="gallery_lead">A glimpse of our events and the moments we've shared.</p>
+                
+                <!-- Gallery Section 1 -->
+                <div class="gallery-section">
+                    <h3 class="gallery-section__title" data-typing-text="LIVE PERFORMANCES"><span class="typing-text"></span><span class="typing-cursor">|</span></h3>
+                    <div class="gallery-carousel" data-gallery="1">
+                        <div class="gallery-carousel__container">
+                            <div class="gallery-carousel__stack">
+                                <div class="gallery-carousel__track">
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 1.jpg" alt="Gallery image 1" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 2.jpg" alt="Gallery image 2" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 3.jpg" alt="Gallery image 3" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 4.jpg" alt="Gallery image 4" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 5.jpg" alt="Gallery image 5" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 6.jpg" alt="Gallery image 6" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 7.jpg" alt="Gallery image 7" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 8.jpg" alt="Gallery image 8" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 9.jpg" alt="Gallery image 9" loading="lazy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gallery-carousel__btn gallery-carousel__btn--prev" aria-label="Previous image" type="button" data-gallery="1">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="gallery-carousel__btn gallery-carousel__btn--next" aria-label="Next image" type="button" data-gallery="1">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <div class="gallery-carousel__counter">
+                            <span class="gallery-carousel__current">1</span>
+                            <span class="gallery-carousel__separator">/</span>
+                            <span class="gallery-carousel__total">9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Section 2 -->
+                <div class="gallery-section">
+                    <h3 class="gallery-section__title" data-typing-text="SPECIAL MOMENTS"><span class="typing-text"></span><span class="typing-cursor">|</span></h3>
+                    <div class="gallery-carousel" data-gallery="2">
+                        <div class="gallery-carousel__container">
+                            <div class="gallery-carousel__stack">
+                                <div class="gallery-carousel__track">
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 10.jpg" alt="Gallery image 10" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 11.jpg" alt="Gallery image 11" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 12.jpg" alt="Gallery image 12" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 13.jpg" alt="Gallery image 13" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 14.JPG" alt="Gallery image 14" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 15.jpg" alt="Gallery image 15" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 16.jpg" alt="Gallery image 16" loading="lazy"></div>
+                                    <div class="gallery-carousel__item"><img src="images/Gallery/Image 17.jpeg" alt="Gallery image 17" loading="lazy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="gallery-carousel__btn gallery-carousel__btn--prev" aria-label="Previous image" type="button" data-gallery="2">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="gallery-carousel__btn gallery-carousel__btn--next" aria-label="Next image" type="button" data-gallery="2">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <div class="gallery-carousel__counter">
+                            <span class="gallery-carousel__current">1</span>
+                            <span class="gallery-carousel__separator">/</span>
+                            <span class="gallery-carousel__total">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="section section--alt">
+            <audio id="scheduleBackgroundAudio" loop preload="auto" aria-label="Schedule background music">
+                <source src="audio/Schedule music.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-bar"></div>
+            <div class="wrap">
+                <h2 class="section-title" data-i18n="schedule_title">Schedule</h2>
+                <p class="section-lead" data-i18n="schedule_lead">Check our availability and book your date. All dates are subject to confirmation.</p>
+                <div class="schedule-month-list" id="scheduleMonthList" role="tablist" aria-label="Months"></div>
+                <div class="schedule-calendar-view" id="scheduleCalendarView" aria-live="polite"></div>
+                <div class="schedule-legend">
+                    <span class="schedule-legend__item schedule-legend__booked"><span class="schedule-legend__dot"></span> <span data-i18n="schedule_booked">Booked</span></span>
+                    <span class="schedule-legend__item schedule-legend__available"><span class="schedule-legend__dot"></span> <span data-i18n="schedule_available">Available</span></span>
+                </div>
+                <p class="schedule-select-hint" data-i18n="schedule_select_hint">Click an available date to request it. The organiser will confirm by email.</p>
+                <p class="schedule-note" data-i18n="schedule_note">Contact us to secure your date. We'll confirm as soon as possible.</p>
+            </div>
+        </section>
+
+        <!-- Schedule booking modal: customer selects slot and sends request; DJ receives email via Formspree -->
+        <div id="scheduleBookingModal" class="schedule-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="scheduleModalTitle">
+            <div class="schedule-modal__backdrop"></div>
+            <div class="schedule-modal__box">
+                <h3 id="scheduleModalTitle" class="schedule-modal__title" data-i18n="schedule_request_title">Request confirmation for this date</h3>
+                <p class="schedule-modal__date" id="scheduleModalDate"></p>
+                <form id="scheduleBookingForm" class="schedule-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="date" id="scheduleFormDate" value="">
+                    <input type="hidden" name="_subject" id="scheduleFormSubject" value="Schedule request – Kat Team Events">
+                    <label class="schedule-form__label" for="scheduleFormName"><span data-i18n="schedule_form_name">Your name</span></label>
+                    <input type="text" id="scheduleFormName" name="name" class="schedule-form__input" required>
+                    <label class="schedule-form__label" for="scheduleFormEmail"><span data-i18n="schedule_form_email">Your email</span></label>
+                    <input type="email" id="scheduleFormEmail" name="email" class="schedule-form__input" required>
+                    <label class="schedule-form__label" for="scheduleFormPhone"><span data-i18n="schedule_form_phone">Phone</span></label>
+                    <input type="tel" id="scheduleFormPhone" name="phone" class="schedule-form__input">
+                    <label class="schedule-form__label" for="scheduleFormMessage"><span data-i18n="schedule_form_message">Message (optional)</span></label>
+                    <textarea id="scheduleFormMessage" name="message" class="schedule-form__textarea" rows="3"></textarea>
+                    <div class="schedule-form__actions">
+                        <button type="submit" class="schedule-form__submit" data-i18n="schedule_form_send">Send request</button>
+                        <button type="button" class="schedule-form__close" data-i18n="schedule_form_close">Cancel</button>
+                    </div>
+                </form>
+                <div id="scheduleModalSuccess" class="schedule-modal__success" aria-live="polite" hidden>
+                    <p data-i18n="schedule_success">Your request has been sent. The organiser will confirm by email as soon as possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="offer" class="section section--alt">
+            <div class="section-bar"></div>
+            <div class="wrap">
+                <h2 class="section-title" data-i18n="offer_title">What We Offer</h2>
+                <p class="section-lead" data-i18n="offer_lead">The services we bring to your event as a band.</p>
+                <div class="offer-grid">
+                    <article class="offer-card offer-card--dj" id="offerCardDj">
+                        <div class="offer-card__disc-track" aria-hidden="true" id="danceAnimation">
+                            <svg class="offer-card__disc" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                <defs>
+                                    <linearGradient id="discShineDj" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:currentColor;stop-opacity:0.95"/>
+                                        <stop offset="100%" style="stop-color:currentColor;stop-opacity:0.6"/>
+                                    </linearGradient>
+                                    <filter id="discShadowDj" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.4)"/>
+                                    </filter>
+                                </defs>
+                                <circle class="disc-vinyl" cx="40" cy="40" r="36" fill="url(#discShineDj)" filter="url(#discShadowDj)" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+                                <circle class="disc-grooves" cx="40" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.15"/>
+                                <circle class="disc-grooves" cx="40" cy="40" r="22" fill="none" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <circle class="disc-label" cx="40" cy="40" r="12" fill="rgba(0,0,0,0.5)"/>
+                                <circle class="disc-hole" cx="40" cy="40" r="4" fill="rgba(0,0,0,0.8)"/>
+                            </svg>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s1_title">DJ & Music</h3>
+                        <p class="offer-card__text" data-i18n="offer_s1_desc">We take care of the music from start to finish—from emotional moments to the dance floor. We listen to your requests and bring the right songs at the right time.</p>
+                    </article>
+                    <article class="offer-card offer-card--singer" id="offerCardSinger">
+                        <div class="offer-card__singer-wrap" aria-hidden="true">
+                            <div class="singer-notes-track">
+                                <div class="singer-notes">
+                                    <span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span>
+                                    <span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span><span class="singer-note">♪</span><span class="singer-note">♫</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s2_title">Live Singer</h3>
+                        <p class="offer-card__text" data-i18n="offer_s2_desc">Our female singer delivers a diverse repertoire—pop, blues and traditional—with a voice that fills the room and gets everyone on the dance floor.</p>
+                    </article>
+                    <article class="offer-card offer-card--mc" id="offerCardMc">
+                        <div class="offer-card__mc-smile-wrap" aria-hidden="true">
+                            <svg class="mc-smile-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                <defs>
+                                    <radialGradient id="orangeGoldGradient" cx="0.5" cy="0.5" r="0.5" fx="0.35" fy="0.35">
+                                        <stop offset="0%" stop-color="#f9d423"/>
+                                        <stop offset="50%" stop-color="#e67e22"/>
+                                        <stop offset="100%" stop-color="#d35400"/>
+                                    </radialGradient>
+                                </defs>
+                                <g class="mc-face mc-face--1">
+                                    <circle class="face-circle" cx="20" cy="20" r="16" opacity="0.9" fill="url(#orangeGoldGradient)"/>
+                                    <ellipse class="face-eye face-eye--l" cx="14" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <ellipse class="face-eye face-eye--r" cx="26" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <path class="face-mouth face-mouth--open" d="M11 24 Q20 31 29 24" fill="none" stroke="#1a1614" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <g class="mc-face mc-face--2">
+                                    <circle class="face-circle" cx="60" cy="20" r="16" opacity="0.9" fill="url(#orangeGoldGradient)"/>
+                                    <ellipse class="face-eye face-eye--l" cx="54" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <ellipse class="face-eye face-eye--r" cx="66" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <path class="face-mouth face-mouth--open" d="M51 24 Q60 31 69 24" fill="none" stroke="#1a1614" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <g class="mc-face mc-face--3">
+                                    <circle class="face-circle" cx="100" cy="20" r="16" opacity="0.9" fill="url(#orangeGoldGradient)"/>
+                                    <ellipse class="face-eye face-eye--l" cx="94" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <ellipse class="face-eye face-eye--r" cx="106" cy="18" rx="2.5" ry="3" fill="#1a1614"/>
+                                    <path class="face-mouth face-mouth--open" d="M91 24 Q100 31 109 24" fill="none" stroke="#1a1614" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s3_title">MC & Hosting</h3>
+                        <p class="offer-card__text" data-i18n="offer_s3_desc">Our Master of Ceremony keeps the flow of your event smooth, announces moments, shares the right words and helps every guest feel welcome and involved.</p>
+                    </article>
+                    <article class="offer-card offer-card--sound" id="offerCardSound">
+                        <div class="offer-card__sound-wrap" aria-hidden="true">
+                            <div class="sound-system">
+                                <div class="sound-system__box">
+                                    <span class="sound-system__cone"></span>
+                                    <div class="sound-system__bars">
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sound-system">
+                                <div class="sound-system__box">
+                                    <span class="sound-system__cone"></span>
+                                    <div class="sound-system__bars">
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                        <span class="sound-system__bar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s4_title">Sound System</h3>
+                        <p class="offer-card__text" data-i18n="offer_s4_desc">Professional sound that works in small rooms or large halls, so every word and note is heard clearly wherever your guests are.</p>
+                    </article>
+                    <article class="offer-card offer-card--lights" id="offerCardLights">
+                        <div class="offer-card__lights-wrap" aria-hidden="true">
+                            <span class="lights-bulb lights-bulb--1"></span>
+                            <span class="lights-bulb lights-bulb--2"></span>
+                            <span class="lights-bulb lights-bulb--3"></span>
+                            <span class="lights-bulb lights-bulb--4"></span>
+                            <span class="lights-bulb lights-bulb--5"></span>
+                            <span class="lights-bulb lights-bulb--6"></span>
+                            <span class="lights-bulb lights-bulb--7"></span>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s5_title">Lights & Effects</h3>
+                        <p class="offer-card__text" data-i18n="offer_s5_desc">Lighting that brings colour and life to the space, plus smoke and CO2 effects to create atmosphere and get everyone dancing.</p>
+                    </article>
+                    <article class="offer-card offer-card--extras" id="offerCardExtras">
+                        <div class="offer-card__extras-icons" aria-hidden="true">
+                            <span class="extras-icon extras-icon--plus"><i class="fa-solid fa-plus"></i></span>
+                            <span class="extras-icon extras-icon--sax" aria-hidden="true">🎷</span>
+                            <span class="extras-icon extras-icon--piano" aria-hidden="true">🎹</span>
+                            <span class="extras-icon extras-icon--flute" aria-hidden="true">🎵</span>
+                        </div>
+                        <h3 class="offer-card__title" data-i18n="offer_s6_title">Extras</h3>
+                        <p class="offer-card__text" data-i18n="offer_s6_desc">We can add instrumentalists—saxophone, piano, violin to bring you live music at your event and make it complete.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-bar"></div>
+            <div class="wrap">
+                <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+                <p class="section-lead contact-intro" data-i18n="contact_intro">Get in touch—we can't wait to create memories together.</p>
+                <div class="contact-layout">
+                    <div class="contact-card">
+                        <h3 class="contact-card__title" data-i18n="contact_reach">Reach us</h3>
+                        <a href="https://www.facebook.com/kat.team.events/?locale=en_GB" target="_blank" rel="noopener noreferrer" class="contact-item contact-item--fb"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a>
+                        <a href="https://www.instagram.com/Kat_team_events/" target="_blank" rel="noopener noreferrer" class="contact-item contact-item--ig"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i> Instagram</a>
+                        <a href="tel:+447590299765" class="contact-item contact-item--phone"><i class="fa-solid fa-square-phone" aria-hidden="true"></i> +44 7590 299765</a>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.9276387229365!2d-0.23973362352491967!3d51.58788957183169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761127e6677df1%3A0x4c478432a38d32ca!2s25%20Colindeep%20Ln%2C%20London%20NW4%204SG!5e0!3m2!1sen!2suk!4v1736785072073!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: 25 Colindeep Lane, London NW4 4SG" data-i18n-title="map_title"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p class="footer-text" data-i18n="footer_text">Kat Team Events – Making your celebration unforgettable.</p>
+        </div>
+    </footer>
+
+    <div id="gallery-lightbox" class="gallery-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="View image">
+        <img src="" alt="" class="gallery-lightbox__img">
+    </div>
+
+    <script src="hero-audio.js"></script>
+    <script src="mobile-nav.js"></script>
+    <script src="logo-animation.js"></script>
+    <script src="nav-hover.js"></script>
+    <script src="lang-switcher.js"></script>
+    <script src="nav-lights.js"></script>
+    <script src="welcome.js"></script>
+    <script src="artist-hover.js"></script>
+    <script src="artist-name-anim.js"></script>
+    <script src="schedule.js"></script>
+    <script src="offer-dance.js"></script>
+    <script src="gallery-lightbox.js"></script>
+    <script src="gallery-typing.js"></script>
+</body>
+</html>

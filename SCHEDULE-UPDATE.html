@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule update instructions – Kat Team Events</title>
+    <style>
+        @media print {
+            body { margin: 1.2cm; font-size: 11pt; }
+            .save-as-pdf { display: none !important; }
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+        }
+        .save-as-pdf {
+            background: #d4a030;
+            color: #0c0b0a;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        h1 { font-size: 1.4rem; margin-top: 0; border-bottom: 2px solid #d4a030; padding-bottom: 0.3rem; }
+        h2 { font-size: 1.15rem; margin-top: 1.5rem; color: #333; }
+        p { margin: 0.6rem 0; }
+        ul, ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+        li { margin: 0.3rem 0; }
+        code { background: #f0f0f0; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
+        table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+        th, td { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; }
+        th { background: #f5f5f5; }
+        hr { border: none; border-top: 1px solid #ddd; margin: 1.2rem 0; }
+    </style>
+</head>
+<body>
+    <p class="save-as-pdf">To save as PDF: open this file in your browser, then use <strong>File → Print</strong> and choose <strong>Save as PDF</strong> or <strong>Microsoft Print to PDF</strong>.</p>
+
+    <h1>Updating the Schedule (Booked Dates) From the Web</h1>
+    <p>You can manage which dates are <strong>booked</strong> or <strong>available</strong> in two ways.</p>
+
+    <hr>
+
+    <h2>Option 1: Edit a Google Sheet (no code)</h2>
+    <ol>
+        <li><strong>Create a Google Sheet</strong> (e.g. “Kat Team – Booked dates”).</li>
+        <li>In the first column, put one date per row in this format: <strong>YYYY-MM-DD</strong>
+            <ul>
+                <li>Example: <code>2025-03-15</code> for 15 March 2025.</li>
+                <li>You can use a header in row 1 (e.g. “Date”) – it will be ignored.</li>
+            </ul>
+        </li>
+        <li><strong>Publish the sheet:</strong>
+            <ul>
+                <li><strong>File → Share → Publish to web</strong></li>
+                <li>Choose the sheet (e.g. “Sheet1”), format <strong>CSV</strong></li>
+                <li>Click <strong>Publish</strong> and copy the link (it looks like<br>
+                    <code>https://docs.google.com/spreadsheets/d/.../export?format=csv&gid=0</code>).</li>
+            </ul>
+        </li>
+        <li><strong>Connect the website to the sheet:</strong>
+            <ul>
+                <li>Open <strong>schedule.js</strong> in a text editor.</li>
+                <li>Find the line: <code>var BOOKED_DATES_SOURCE_URL = '';</code></li>
+                <li>Paste your CSV link between the quotes, for example:<br>
+                    <code>var BOOKED_DATES_SOURCE_URL = 'https://docs.google.com/spreadsheets/d/ABC123.../export?format=csv&gid=0';</code></li>
+                <li>Save the file and upload the updated <strong>schedule.js</strong> to your site.</li>
+            </ul>
+        </li>
+    </ol>
+    <p>After that, <strong>any change you make in the Google Sheet</strong> (add or remove a date, save) will be reflected on the website the next time someone loads or refreshes the Schedule page. You don’t need to edit the code again.</p>
+
+    <hr>
+
+    <h2>Option 2: Edit the code (schedule.js)</h2>
+    <p>If you prefer not to use a Google Sheet:</p>
+    <ul>
+        <li>Leave <strong>BOOKED_DATES_SOURCE_URL</strong> as: <code>var BOOKED_DATES_SOURCE_URL = '';</code></li>
+        <li>Edit the <strong>BOOKED_DATES</strong> list at the top of <strong>schedule.js</strong>: add or remove dates in <code>'YYYY-MM-DD'</code> format.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>What you want</th>
+                <th>What to do</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Change dates from the web</td>
+                <td>Use <strong>Option 1</strong>: set <code>BOOKED_DATES_SOURCE_URL</code> to your sheet’s CSV link.</td>
+            </tr>
+            <tr>
+                <td>Change dates in the code</td>
+                <td>Use <strong>Option 2</strong>: edit the <code>BOOKED_DATES</code> array in <strong>schedule.js</strong>.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
