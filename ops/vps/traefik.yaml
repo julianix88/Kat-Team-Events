@@ -36,7 +36,7 @@ http:
     kat-web:
       loadBalancer:
         servers:
-          - url: http://kat-managed:80
+          - url: http://kat-git-managed:80
   serversTransports:
     kat-namecheap-tls:
-      serverName: katteamevents.com
+      serverName: server402.web-hosting.com
