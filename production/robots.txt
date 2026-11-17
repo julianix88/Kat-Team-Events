@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# AI search & citation crawlers (OpenAI, Anthropic, Perplexity, Google Gemini)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://katteamevents.com/sitemap.xml
+
+# AI context file: https://katteamevents.com/llms.txt

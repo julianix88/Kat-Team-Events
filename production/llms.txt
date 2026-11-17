@@ -1,0 +1,55 @@
+# Kat Team Events
+
+> Professional wedding and party entertainment in Romania and the United Kingdom — DJ, live singer, MC, sound and lighting as one coordinated team.
+
+Kat Team Events is an entertainment business based in London (UK) that travels to weddings, baptisms and private parties across Romania and England. The core team: DJ Kat (15+ years experience), live singer Diana Onofrei, and MC Iulian Arama.
+
+## Services
+
+- **DJ & music** — Full-evening music from emotional moments to the dance floor; requests welcome.
+- **Live singer** — Pop, blues and traditional repertoire with Diana Onofrei.
+- **MC & hosting** — Ceremony flow, announcements and guest engagement (Iulian Arama).
+- **Sound system** — Professional PA for small rooms and large halls (d&b, Dynacord, SQ5).
+- **Lights & effects** — Room lighting, smoke and CO2 effects.
+- **Band extras** — Optional instrumentalists (saxophone, piano, violin).
+- **Equipment hire** — Standalone rental of pro audio, lights and wireless mics (Shure UR4D, PSM300).
+
+## Coverage
+
+| Region | Event types | Notes |
+|--------|-------------|-------|
+| Romania | Nuntă, botez, petrecere | Travel to your venue — Bucharest, Cluj, Timișoara, Iași, Suceava, Piatra Neamț, Botoșani, Constanța, Bucovina, Moldova, Dobrogea |
+| England | Weddings, parties | Travel to your venue — base in London NW4 |
+
+## How to book
+
+1. Check the availability calendar at https://katteamevents.com/#schedule or message on WhatsApp.
+2. Share your date, venue and event type (wedding, baptism, party).
+3. Kat Team Events confirms availability and package details by email.
+4. The full team arrives with sound, lights and performance equipment.
+
+## Pricing
+
+Custom quotes per event (date, location, venue size, package). Contact for a personalised offer — no fixed public price list.
+
+## Contact
+
+- **Website:** https://katteamevents.com/
+- **Phone / WhatsApp:** +44 7590 299765 (E.164: +447590299765; works from Romania and UK)
+- **Facebook:** https://www.facebook.com/kat.team.events/
+- **Instagram:** https://www.instagram.com/Kat_team_events/
+- **Reviews:** https://www.facebook.com/kat.team.events/reviews
+
+## Machine-readable resources
+
+- [Services detail (markdown)](https://katteamevents.com/services.md)
+- [Business data (JSON)](https://katteamevents.com/business.json)
+- [Sitemap](https://katteamevents.com/sitemap.xml)
+
+## Languages
+
+The website is available in Romanian (ro) and English (en). Primary market keywords: DJ nunta, DJ botez, solistă, formație, MC, wedding DJ England, Romania wedding entertainment.
+
+## Last updated
+
+2026-06-11

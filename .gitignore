@@ -1,0 +1,10 @@
+.env*
+**/.env*
+**/*.local.php
+**/*.pem
+**/*.key
+*.tar.gz
+*.coreftp
+/AGENTS.md
+/ops/coolify/README.md
+/ops/vps/MIGRATION.md

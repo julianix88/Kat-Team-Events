@@ -1,0 +1,55 @@
+﻿Image 16.jpg	33,18 MB
+Image 15.jpg	20,9 MB
+Image 1.jpg	18,41 MB
+Image 14.JPG	7,08 MB
+Image 11.jpg	6,39 MB
+Image 7.jpg	5,61 MB
+Image 10.jpg	5,3 MB
+Image 8.jpg	4,81 MB
+Image 9.jpg	4,79 MB
+Image 4.jpg	1,88 MB
+Image 6.jpg	1,65 MB
+Image 3.jpg	1,44 MB
+Image 2.jpg	1,4 MB
+Image 5.jpg	1,25 MB
+Image 12.jpg	0,44 MB
+Image 13.jpg	0,18 MB
+Image 17.jpeg	0,15 MB
+
+Diana Onofrei singing.jpg	0,14 MB
+Dj Kat on decks.jpg	5,58 MB
+Iulian Arama Master of ceremony.jpg	2,5 MB
+KAT TEAM EVENTS.jpg	0,22 MB
+Logo.png	0,17 MB
+
+VIDEO (targets: hero loop 3-15 MB @ 720p; artist clips smaller where possible)
+
+Diana Onofrei.mp4	33,97 MB
+DJ Kat.mp4	101,83 MB
+MC Iulian Arama.mp4	28,13 MB
+Video main 01.mp4	230,8 MB
+
+--- GENERATED (targets met where noted) ---
+hero-banner-720p.mp4	7.64 MB (target <=15)
+hero-promo-loop.mp4	2.22 MB
+hero-banner-poster.webp	184 KB
+hero-promo-poster.webp	45 KB
+Gallery thumbs (max 1000px WebP q78):
+
+Image-1.webp	45,4 KB
+Image-10.webp	51,4 KB
+Image-11.webp	59,9 KB
+Image-12.webp	82,8 KB
+Image-13.webp	49,1 KB
+Image-14.webp	63,8 KB
+Image-15.webp	38 KB
+Image-16.webp	95,7 KB
+Image-17.webp	48 KB
+Image-2.webp	51,7 KB
+Image-3.webp	51,5 KB
+Image-4.webp	76,2 KB
+Image-5.webp	25,9 KB
+Image-6.webp	53,8 KB
+Image-7.webp	36,2 KB
+Image-8.webp	60,1 KB
+Image-9.webp	55,9 KB

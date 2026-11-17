@@ -1,0 +1,11 @@
+.git
+**/.env*
+**/*.local.php
+**/*.pem
+**/*.key
+**/.cursor
+**/.well-known
+assets
+css
+js
+index.html

@@ -1,0 +1,42 @@
+http:
+  routers:
+    kat-booking:
+      rule: '(Host(`katteamevents.com`) || Host(`www.katteamevents.com`)) && Path(`/schedule-submit.php`)'
+      priority: 100
+      entryPoints: [https]
+      service: kat-booking-legacy
+      tls:
+        certResolver: letsencrypt
+    kat-http:
+      rule: 'Host(`katteamevents.com`) || Host(`www.katteamevents.com`)'
+      entryPoints: [http]
+      service: kat-web
+      middlewares: [kat-https-redirect]
+    kat-https:
+      rule: 'Host(`katteamevents.com`) || Host(`www.katteamevents.com`)'
+      entryPoints: [https]
+      service: kat-web
+      tls:
+        certResolver: letsencrypt
+        domains:
+          - main: katteamevents.com
+            sans: [www.katteamevents.com]
+  middlewares:
+    kat-https-redirect:
+      redirectScheme:
+        scheme: https
+        permanent: true
+  services:
+    kat-booking-legacy:
+      loadBalancer:
+        passHostHeader: true
+        serversTransport: kat-namecheap-tls
+        servers:
+          - url: https://162.213.253.120
+    kat-web:
+      loadBalancer:
+        servers:
+          - url: http://kat-managed:80
+  serversTransports:
+    kat-namecheap-tls:
+      serverName: katteamevents.com

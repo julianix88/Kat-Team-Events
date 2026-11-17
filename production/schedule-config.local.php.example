@@ -1,0 +1,10 @@
+<?php
+/**
+ * Copy to schedule-config.local.php and set your DJ inbox.
+ * Deploy script can also generate this from SCHEDULE_DJ_EMAIL in .env.deploy.local
+ */
+return [
+    'to' => 'dj@example.com',
+    'from' => 'noreply@katteamevents.com',
+    'subject_prefix' => 'Schedule request – Kat Team Events',
+];

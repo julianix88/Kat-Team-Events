@@ -1,0 +1,29 @@
+{
+  "name": "Kat Team Events",
+  "url": "https://katteamevents.com/",
+  "telephone": "+447590299765",
+  "telephoneDisplay": "+44 7590 299765",
+  "category": "Wedding service",
+  "description": "Professional DJ, live singer and MC for weddings, baptisms and parties in Romania and the United Kingdom.",
+  "serviceAreas": [
+    "Suceava, Romania",
+    "Bucharest, Romania",
+    "Cluj-Napoca, Romania",
+    "Timișoara, Romania",
+    "Iași, Romania",
+    "London, United Kingdom",
+    "England, United Kingdom"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/kat.team.events/",
+    "https://www.instagram.com/Kat_team_events/"
+  ],
+  "address": {
+    "streetAddress": "25 Colindeep Lane",
+    "addressLocality": "London",
+    "postalCode": "NW4 4SG",
+    "addressCountry": "GB"
+  },
+  "googleSearchConsoleVerified": true,
+  "lastUpdated": "2026-06-21"
+}

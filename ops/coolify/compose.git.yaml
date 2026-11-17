@@ -1,0 +1,27 @@
+services:
+  website:
+    build:
+      context: ../..
+      dockerfile: ops/vps/Dockerfile
+    labels:
+      - traefik.enable=false
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:3204:80'
+    networks:
+      coolify:
+        aliases: [kat-git-managed]
+    volumes:
+      - /opt/kat-team-events/shared/booking-config.php:/run/secrets/booking-config.php:ro
+      - /opt/kat-team-events/shared/msmtprc:/run/secrets/msmtprc:ro
+    mem_limit: 256m
+    cpus: 0.5
+    security_opt: ['no-new-privileges:true']
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '3'
+networks:
+  coolify:
+    external: true
