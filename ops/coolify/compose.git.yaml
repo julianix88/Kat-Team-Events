@@ -1,7 +1,8 @@
 services:
   website:
     build:
-      context: ../..
+      # Coolify sets the Compose project directory to the repository root.
+      context: .
       dockerfile: ops/vps/Dockerfile
     labels:
       - traefik.enable=false
