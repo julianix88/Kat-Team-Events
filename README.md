@@ -8,8 +8,12 @@ The website source is in **`production/`**. Edit files there, including
 The `main` branch is the production branch for https://katteamevents.com.
 Coolify builds the Git-based Docker Compose application from
 `ops/coolify/compose.git.yaml`, using `ops/vps/Dockerfile`.
-Pushes to `main` trigger deployment once the repository webhook is configured.
+Pushes to `main` trigger deployment through the signed GitHub push webhook.
 Other branches do not update the public website.
+
+Keep Coolify's "Connect to predefined network" option disabled: the Compose
+file already joins the external `coolify` network and defines the stable
+`kat-git-managed` alias used by the existing HTTPS routing.
 
 The PHP image, private runtime mounts, resource limits, and booking proxy must
 be preserved. Credentials and runtime configuration are kept outside Git.
